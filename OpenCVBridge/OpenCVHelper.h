@@ -35,10 +35,5 @@ namespace OpenCVBridge
 		bool TryConvert(Windows::Graphics::Imaging::SoftwareBitmap^ from, cv::Mat& convertedMat);
 		bool GetPointerToPixelData(Windows::Graphics::Imaging::SoftwareBitmap^ bitmap,
 			unsigned char** pPixelData, unsigned int* capacity);
-		std::string getOCR(cv::Rect r, cv::Mat m, cv::Mat& rTemp);
-		cv::Mat brighten(cv::Mat image);
-		cv::Mat processWordImage(cv::Mat subImg);
-		std::vector<cv::Rect> getLetters(cv::Mat m);
-		bool ocrRunning = false;
 	};
 }
